@@ -1,2 +1,2 @@
-# C-_Notes
+# Cpp_Notes
 notes for learning C++
