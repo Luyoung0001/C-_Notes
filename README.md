@@ -1,2 +1,2 @@
 # Cpp_Notes
-notes for learning C++
+notes and samples of codes for learning C++
