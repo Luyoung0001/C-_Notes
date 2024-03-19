@@ -13,6 +13,7 @@ int main() {
 
             // 进入内层 while 循环,使用 cin.get()
             // 来逐个读取输入缓冲区中的字符,直到遇到换行符'\n'为止
+            // 将缓冲区的字符全部刷掉
             while (cin.get() != '\n') {
                 continue;
             }
