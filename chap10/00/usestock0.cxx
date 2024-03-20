@@ -2,36 +2,36 @@
 #include <iostream>
 int main() {
     // 如果你自己定义了构造函数，编译器默认会认为你知道如何初始化对象，因此不再生成默认构造函数。
-    // {
-    //     Stock cat; // 这里会报错，因为没有默认构造函数可用
-    //     cat.acquire("Cats", 20, 1);
-    //     cat.show();
-    //     cat.buy(20, 1);
-    //     cat.show();
-    //     cat.sell(39, 2);
-    //     cat.show();
-    //     cat.buy(39, 1);
-    //     cat.show();
-    //     // 使用构造函数,多种方式
-    //     Stock dog = {"Doge", 200, 200};
-    //     dog.show();
-    //     Stock sheep{"Sheep", 100, 80};
-    //     sheep.show();
-    //     Stock *tiger = new Stock("Tiger", 200, 300);
-    //     tiger->show();
-    //     delete tiger;
+    {
+        Stock cat; // 这里会报错，因为没有默认构造函数可用
+        cat.acquire("Cats", 20, 1);
+        cat.show();
+        cat.buy(20, 1);
+        cat.show();
+        cat.sell(39, 2);
+        cat.show();
+        cat.buy(39, 1);
+        cat.show();
+        // 使用构造函数,多种方式
+        Stock dog = {"Doge", 200, 200};
+        dog.show();
+        Stock sheep{"Sheep", 100, 80};
+        sheep.show();
+        Stock *tiger = new Stock("Tiger", 200, 300);
+        tiger->show();
+        delete tiger;
 
-    //     // 创建一个临时对象,然后舍弃它,因此这里仍然会调用析构函数
-    //     sheep = Stock("Sheep_new", 20, 300);
-    //     sheep.show();
+        // 创建一个临时对象,然后舍弃它,因此这里仍然会调用析构函数
+        sheep = Stock("Sheep_new", 20, 300);
+        sheep.show();
 
-    //     // const 对象
-    //     const Stock Elephant = Stock("Elephant", 200, 300);
-    //     // Elephant.show();  这里会报错,因为 show()的行为不确定,它不能保证
-    //     // show()方法不会对 Elephant 进行修改
-    //     // 要想调用这个函数,必须得在函数原型中,定义中进行承诺
-    //     Elephant.show();
-    // };
+        // const 对象
+        const Stock Elephant = Stock("Elephant", 200, 300);
+        // Elephant.show();  这里会报错,因为 show()的行为不确定,它不能保证
+        // show()方法不会对 Elephant 进行修改
+        // 要想调用这个函数,必须得在函数原型中,定义中进行承诺不修改它
+        Elephant.show();
+    };
 
     // 初始化数组对象
     {
