@@ -32,9 +32,42 @@ void Stock::sell(long num, double price) {
         set_tot();
     }
 }
-void Stock::show() {
+void Stock::show() const{
     std::cout << "Company:" << company << '\n'
               << "shares:" << shares << '\n'
               << "Share Price:$" << share_val << '\n'
-              << "Total Worth:$" << total_val << std::endl;
+              << "Total Worth:$" << total_val << '\n'
+              << std::endl;
 }
+// 定义构造函数
+Stock::Stock(const std::string &co, long n, double price) {
+    company = co;
+    if (n < 0) {
+        std::cout << "股票数量不能为负数,数量将会被设置为 0." << std::endl;
+        shares = 0;
+    } else {
+        shares = n;
+        share_val = price;
+        set_tot();
+    }
+}
+// 比较函数
+const Stock & Stock::topval(const Stock & stock2)const{
+    if(stock2.total_val > this->total_val){
+        return stock2;
+    }else{
+        return *this;
+    }
+
+}
+// 默认构造函数
+Stock::Stock() {
+    company = "No name";
+    shares = 0.0;
+    share_val = 0.0;
+}
+// 析构函数
+Stock::~Stock(){
+    std::cout << "这里调用了析构函数." << std::endl;
+}
+
