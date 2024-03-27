@@ -59,3 +59,4 @@ void Time::show() const {
     std::cout << "Hour: " << this->hour << std::endl;
     std::cout << "Minute: " << this->minute << std::endl;
 }
+
