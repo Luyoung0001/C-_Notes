@@ -19,7 +19,7 @@ int main() {
     callme1(headline1);
     cout << "headline1:" << headline1 << endl;
 
-    // 这里调用拷贝构造函数,因为按值传递了对象
+    // 这里调用赋值构造函数,因为按值传递了对象
     // 调用完直接析构
     // 析构了原来对象中的 str,因此 cout << "headline2:" << headline2 << endl
     // 会打印乱码: string: 0@?Xh?
@@ -34,6 +34,7 @@ int main() {
     // 调用的构造函数如下:
     // Stringbad(const Stringbad &);
 
+    // 隐式赋值运算
     Stringbad sailor = sports; // 正常析构
     cout << "sailor:" << sailor << endl;
     cout << "Assign one object to another:\n";
