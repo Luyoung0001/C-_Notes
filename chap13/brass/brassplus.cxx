@@ -1,5 +1,5 @@
 #include "brassplus.h"
-#include "chap13/brass/brass.h"
+#include "brass.h"
 #include "format.h"
 #include <iostream>
 using std::cout;
@@ -47,3 +47,4 @@ void BrassPlus::Withdraw(double amt) {
     }
     restore(initialState, prec);
 }
+BrassPlus::~BrassPlus() {}

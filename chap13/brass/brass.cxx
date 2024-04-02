@@ -49,3 +49,4 @@ void Brass::ViewAcct() const {
     cout << "Balance: $" << balance << endl;
     restore(initialState, prec); // 保存原来的格式
 }
+Brass:: ~Brass(){}
