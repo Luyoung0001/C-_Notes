@@ -15,7 +15,7 @@ void Worker::Set() {
     while (cin.get() != '\n') {
         continue;
     }
-    cin.get(); // 刷掉换行符
+    // cin.get(); // 刷掉换行符
 }
 void Worker::Show() const {
     cout << "名字:" << fullname << endl;

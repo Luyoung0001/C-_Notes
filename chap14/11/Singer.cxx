@@ -1,5 +1,4 @@
 #include "Singer.h"
-#include "Worker0.h"
 #include <iostream>
 #include <string>
 using std::cin;

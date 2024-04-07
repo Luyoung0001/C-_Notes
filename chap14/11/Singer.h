@@ -2,7 +2,7 @@
 #define SINGER_H_
 
 #include "Worker0.h"
-class Singer : public Worker {
+class Singer : virtual public Worker {
   protected:
     enum { other, alto, contralto, soprano, bass, baritone, tenor };
     enum { Vtypes = 7 };
