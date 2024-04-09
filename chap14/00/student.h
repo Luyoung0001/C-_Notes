@@ -8,7 +8,7 @@
 class Student {
   private:
     typedef std::valarray<double> ArrayDb;
-    
+
     std::string name;
     ArrayDb scores;
     std::ostream &arr_out(std::ostream &os) const;

@@ -7,6 +7,7 @@ using std::endl;
 
 Worker::~Worker() {}
 
+// protected
 void Worker::Data() const {
     cout << "Name: " << fullname << endl;
     cout << "ID" << id << endl;

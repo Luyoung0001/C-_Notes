@@ -18,7 +18,7 @@ void Waiter::Show() const {
 // protected
 void Waiter::Data() const { cout << "rating:" << panache << endl; }
 void Waiter::Get() {
-    cout << "请输入 rateing :";
+    cout << "请输入 rating :";
     cin >> panache;
     while (cin.get() != '\n') {
         continue;
